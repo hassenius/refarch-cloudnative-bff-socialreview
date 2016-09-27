@@ -1,3 +1,6 @@
+if (process.env.NEW_RELIC_LICENSE_KEY) { 
+    var newrelic = require('newrelic') 
+}
 var loopback = require('loopback');
 var boot = require('loopback-boot');
 var app = module.exports = loopback();
